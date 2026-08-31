@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Course Enrollment & Student Registration</title>
+</head>
+
+<body>
+
+    <h1><center><u>Online Course Enrollment</u></center></h1>
+
+    <p>
+        Welcome to our online course enrollment portal. Students can register
+        for technical courses, select their preferred learning mode and provide
+        their educational and programming background.
+    </p>
+    <hr>
+
+    <h2>Course Information</h2>
+
+    <p>
+        Explore our technical courses and choose a program that matches your
+        career goals and interests.
+    </p>
+
+    <a href="https://tte.delhi.gov.in/tte/course-details-along-qualification-certificate-courses" target="_blank">
+        View Course Information
+    </a>
+
+    <br><br>
+
+    <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+        alt="Students learning online"
+        width="500">
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <label for="studentName">Student Name:</label>
+        <input
+            type="text"
+            name="student_name"
+            placeholder="Enter your full name"
+            minlength="3"
+            maxlength="50"
+            required>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+            maxlength="100"
+            required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            name="password"
+            placeholder="Create a password"
+            minlength="8"
+            maxlength="20"
+            required>
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input
+            type="tel"
+            name="mobile"
+            placeholder="Enter 10-digit mobile number"
+            pattern="[0-9]{10}"
+            minlength="10"
+            maxlength="10"
+            required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input
+            type="date"
+            name="date_of_birth"
+            min="1990-01-01"
+            max="2020-12-31"
+            required>
+        <br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="">-- Select a Course --</option>
+            <option value="java">Java Programming</option>
+            <option value="python">Python Programming</option>
+            <option value="web_development">Web Development</option>
+            <option value="data_structures">Data Structures & Algorithms</option>
+            <option value="database">Database Management</option>
+            <option value="machine_learning">Machine Learning</option>
+        </select>
+        <br><br>
+
+        <label for="batch">Select Batch / Session:</label>
+        <select id="batch" name="batch_session" required>
+            <option value="">-- Select Batch --</option>
+            <option value="morning">Morning - 9:00 AM</option>
+            <option value="afternoon">Afternoon - 2:00 PM</option>
+            <option value="evening">Evening - 6:00 PM</option>
+            <option value="weekend">Weekend Batch</option>
+        </select>
+        <br><br>
+
+        <label>Preferred Learning Mode:</label>
+
+        <input
+            type="radio"
+            name="learning_mode"
+            value="online"
+            required>
+        <label for="online">Online</label>
+
+        <input
+            type="radio"
+            name="learning_mode"
+            value="offline">
+        <label for="offline">Offline</label>
+
+        <input
+            type="radio"
+            name="learning_mode"
+            value="hybrid">
+        <label for="hybrid">Hybrid</label>
+
+        <br><br>
+
+        <label>Areas of Interest:</label>
+        <br><br>
+
+        <input
+            type="checkbox"
+            name="interest"
+            value="java">
+        <label for="java">Java</label>
+        <br><br>
+
+        <input
+            type="checkbox"
+            name="interest"
+            value="python">
+        <label for="python">Python</label>
+        <br><br>
+
+        <input
+            type="checkbox"
+            name="interest"
+            value="web_development">
+        <label for="webDevelopment">Web Development</label>
+        <br><br>
+
+        <input
+            type="checkbox"
+            name="interest"
+            value="data_structures">
+        <label for="dataStructures">Data Structures</label>
+        <br><br>
+
+        <input
+            type="checkbox"
+            name="interest"
+            value="database">
+        <label for="database">Database</label>
+
+        <br><br>
+
+        <label for="education">Education Level:</label>
+        <select id="education" name="education_level" required>
+            <option value="">-- Select Education Level --</option>
+            <option value="12th">12th / Senior Secondary</option>
+            <option value="diploma">Diploma</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+        </select>
+        <br><br>
+
+        <label for="college">College / Institution:</label>
+        <input
+            type="text"
+            name="college_institution"
+            placeholder="Enter college or institution name"
+            minlength="3"
+            maxlength="100"
+            required>
+        <br><br>
+        <label for="semester">Current Semester / Year:</label>
+        <input
+            type="text"
+            name="current_semester"
+            placeholder="Example: 2nd Semester"
+            minlength="2"
+            maxlength="30"
+            required>
+        <br><br>
+
+        <label for="experience">
+            Programming Experience (Years):
+        </label>
+        <input
+            type="number"
+            name="programming_experience"
+            min="0"
+            max="20"
+            step="0.5"
+            value="0"
+            required>
+        <br><br>
+
+        <label for="portfolio">
+            GitHub / Portfolio URL:
+        </label>
+        <input
+            type="url"
+            id="portfolio"
+            name="github_portfolio"
+            placeholder="https://github.com/username">
+        <br><br>
+        <label for="goals">Learning Goals:</label>
+        <br><br>
+        <textarea name="Learning Goals"></textarea>
+        <br><br>
+
+        <input
+            type="checkbox"
+            name="registration_confirmation"
+            value="confirmed"
+            required>
+
+        <label for="confirmation">
+            I confirm that the information provided above is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Submit Registration">
+
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>

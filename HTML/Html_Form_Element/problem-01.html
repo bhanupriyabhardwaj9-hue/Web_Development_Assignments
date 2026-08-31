@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>College Admission Application Form</title>
+</head>
+
+<body>
+
+    <h1><center><u>College Admission Application Form</u></center></h1>
+
+    <p>
+        Welcome to the College Admission Application Portal. Please fill in
+        the form carefully and provide accurate personal, academic and contact
+        information. Fields marked as mandatory must be completed before
+        submitting the application.
+    </p>
+
+    <img src="https://noida.gla.ac.in/banner/banner_desktop.webp"
+         alt="College admission application banner"
+         width="700">
+
+    <p>
+        For more information about our college and courses, visit our
+        <a href="https://noida.gla.ac.in/" target="_blank">
+            official college website
+        </a>.
+    </p>
+
+    <hr>
+
+    <h2>Personal Information</h2>
+
+    <form>
+
+        <p>
+            <label for="fullname">Full Name:</label>
+            <input type="text"
+                   name="full_name"
+                   placeholder="Enter your full name"
+                   minlength="3"
+                   maxlength="50"
+                   required>
+        </p>
+
+        <p>
+            <label for="dob">Date of Birth:</label>
+            <input type="date"
+                   name="date_of_birth"
+                   min="2000-01-01"
+                   max="2008-12-31"
+                   required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label>
+            <input type="email"
+                   name="email"
+                   placeholder="example@email.com"
+                   required>
+        </p>
+
+        <p>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel"
+                   name="mobile_number"
+                   placeholder="10-digit mobile number"
+                   pattern="[6-9][0-9]{9}"
+                   maxlength="10"
+                   required>
+        </p>
+
+        <p>
+            <label for="pin">Application PIN:</label>
+            <input type="password"
+                   name="application_pin"
+                   placeholder="Create a 6-digit PIN"
+                   minlength="6"
+                   maxlength="6"
+                   pattern="[0-9]{6}"
+                   required>
+        </p>
+
+        <p>
+            <label>Gender:</label>
+            <input type="radio"
+                   name="gender"
+                   value="male"
+                   required>
+            <label for="male">Male</label>
+
+            <input type="radio"
+                   id="female"
+                   name="gender"
+                   value="female">
+            <label for="female">Female</label>
+
+            <input type="radio"
+                   id="other"
+                   name="gender"
+                   value="other">
+            <label for="other">Other</label>
+        </p>
+
+        <p>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Select Category --</option>
+                <option value="general">General</option>
+                <option value="obc">OBC</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="ews">EWS</option>
+            </select>
+        </p>
+
+        <hr>
+
+        <h2>Course and Program</h2>
+
+        <p>
+            <label for="course">Select Course/Program:</label>
+
+            <select id="course" name="course_program" required>
+                <option value="">-- Select a Program --</option>
+                <option value="btech_cse">B.Tech Computer Science Engineering</option>
+                <option value="btech_ds">B.Tech Data Science</option>
+                <option value="btech_ai">B.Tech Artificial Intelligence</option>
+                <option value="btech_it">B.Tech Information Technology</option>
+                <option value="btech_ece">B.Tech Electronics and Communication</option>
+                <option value="btech_me">B.Tech Mechanical Engineering</option>
+                <option value="bca">Bachelor of Computer Applications</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Preferred Study Mode:</label>
+
+            <input type="radio"
+                   id="regular"
+                   name="study_mode"
+                   value="regular"
+                   required>
+            <label for="regular">Regular</label>
+
+            <input type="radio"
+                   id="online"
+                   name="study_mode"
+                   value="online">
+            <label for="online">Online</label>
+        </p>
+
+        <p>
+            <label>Areas of Interest:</label><br>
+
+            <input type="checkbox"
+                   id="coding"
+                   name="interests"
+                   value="coding">
+            <label for="coding">Coding</label>
+
+            <input type="checkbox"
+                   id="sports"
+                   name="interests"
+                   value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox"
+                   id="cultural"
+                   name="interests"
+                   value="cultural">
+            <label for="cultural">Cultural Activities</label>
+
+            <input type="checkbox"
+                   id="research"
+                   name="interests"
+                   value="research">
+            <label for="research">Research</label>
+        </p>
+
+        <hr>
+
+        <h2>Previous Qualification</h2>
+
+        <p>
+            <label for="qualification">Previous Qualification:</label>
+
+            <select id="qualification"
+                    name="previous_qualification"
+                    required>
+                <option value="">-- Select Qualification --</option>
+                <option value="12th">Class 12 / Senior Secondary</option>
+                <option value="diploma">Diploma</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="percentage">Percentage / CGPA:</label>
+            <input type="number"
+                   id="percentage"
+                   name="percentage_cgpa"
+                   placeholder="Enter percentage"
+                   min="0"
+                   max="100"
+                   step="0.01"
+                   required>
+        </p>
+
+        <p>
+            <label for="passing_year">Passing Year:</label>
+            <input type="number"
+                   id="passing_year"
+                   name="passing_year"
+                   min="2015"
+                   max="2026"
+                   step="1"
+                   required>
+        </p>
+
+        <p>
+            <label for="school">School / College Name:</label>
+            <input type="text"
+                   id="school"
+                   name="school_college_name"
+                   placeholder="Enter school or college name"
+                   minlength="3"
+                   maxlength="100"
+                   required>
+        </p>
+
+        <hr>
+
+        <h2>Permanent Address</h2>
+
+        <p>
+            <label for="address">Permanent Address:</label><br>
+
+            <textarea name ="Permanent Address"></textarea>
+            </textarea>
+        </p>
+
+        <hr>
+
+        <h2>Admission Document</h2>
+
+        <p>
+            <label for="document">Upload Admission Document:</label>
+
+            <input type="file"
+                   id="document"
+                   name="admission_document"
+                   accept=".pdf,.jpg,.jpeg,.png"
+                   required>
+        </p>
+
+        <p>
+            Accepted formats: PDF, JPG, JPEG and PNG.
+        </p>
+
+        <hr>
+
+        <h2>Declaration</h2>
+
+        <p>
+            <input type="checkbox"
+                   id="declaration"
+                   name="declaration"
+                   value="accepted"
+                   required>
+
+            <label for="declaration">
+                I declare that the information provided by me is true and
+                correct to the best of my knowledge. I agree to the college's
+                admission terms and conditions.
+            </label>
+        </p>
+
+        <hr>
+
+        <p>
+            <input type="submit"
+                   name="submit_application"
+                   value="Submit Application">
+
+            <input type="reset"
+                   name="reset_form"
+                   value="Reset Form">
+        </p>
+
+    </form>
+
+</body>
+
+</html>

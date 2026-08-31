@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital / Clinic Appointment Booking</title>
+</head>
+
+<body>
+
+    <h1><center><u>Clinic Appointment Booking</u></center></h1>
+
+    <p>
+        Welcome to our clinic appointment booking page. Please fill in the form
+        below to request an appointment with one of our doctors. Provide accurate
+        information so that we can contact you and schedule your visit.
+    </p>
+
+    <h2>Clinic Timings</h2>
+
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+        </tr>
+
+        <tr>
+            <td>Monday - Friday</td>
+            <td>9:00 AM</td>
+            <td>7:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Saturday</td>
+            <td>9:00 AM</td>
+            <td>2:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Sunday</td>
+            <td>Closed</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+<hr>
+    <h2>Appointment Form</h2>
+
+    <form>
+
+        <label for="patientName">Patient Name:</label>
+        <input
+            type="text"
+            name="patient_name"
+            minlength="3"
+            maxlength="50"
+            required>
+        <br>
+
+        <label for="email">Email Address:</label>
+        <input
+            type="email"
+            name="email"
+            maxlength="100"
+            required>
+        <br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input
+            type="tel"
+            name="mobile"
+            pattern="[0-9]{10}"
+            minlength="10"
+            maxlength="10"
+            required>
+        <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input
+            type="date"
+            name="date_of_birth"
+            min="1900-01-01"
+            max="2020-12-31"
+            required>
+        <br>
+
+        <label for="appointmentDate">Appointment Date:</label>
+        <input
+            type="date"
+            name="appointment_date"
+            min="2026-09-01"
+            max="2026-12-31"
+            required>
+        <br>
+        <label for="appointmentTime">Appointment Time:</label>
+        <input
+            type="time"
+            name="appointment_time"
+            min="09:00"
+            max="19:00"
+            required>
+        <br>
+
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="">-- Select a Doctor --</option>
+            <option value="dr_aarav_sharma">Dr. Aarav Sharma - Cardiologist</option>
+            <option value="dr_meera_verma">Dr. Meera Verma - Dermatologist</option>
+            <option value="dr_rohan_mehta">Dr. Rohan Mehta - Orthopedic Specialist</option>
+            <option value="dr_ananya_gupta">Dr. Ananya Gupta - Pediatrician</option>
+            <option value="dr_kabir_singh">Dr. Kabir Singh - General Physician</option>
+        </select>
+        <br><br>
+
+        <label>Visit Type:</label>
+        <input
+            type="radio"
+            name="visit_type"
+            value="new_patient"
+            required>
+        <label for="newPatient">New Patient</label>
+
+        <input
+            type="radio"
+            name="visit_type"
+            value="follow_up">
+        <label for="followUp">Follow-up</label>
+
+        <input
+            type="radio"
+            name="visit_type"
+            value="consultation">
+        <label for="consultation">Consultation</label>
+
+        <input
+            type="radio"
+            name="visit_type"
+            value="emergency">
+        <label for="emergency">Emergency</label>
+        <br><br>
+
+        <label>Preferred Communication Method:</label>
+        <input
+            type="radio"
+            name="communication_method"
+            value="phone"
+            required>
+        <label for="phone">Phone</label>
+
+        <input
+            type="radio"
+            name="communication_method"
+            value="email">
+        <label for="emailCommunication">Email</label>
+
+        <input
+            type="radio"
+            name="communication_method"
+            value="sms">
+        <label for="sms">SMS</label>
+        <br>
+
+        <label for="patientId">Patient ID (Optional):</label>
+        <input
+            type="text"
+            name="patient_id"
+            minlength="4"
+            maxlength="15">
+        <br><br>
+
+        <label for="reason">Reason for Visit / Additional Information:</label>
+        <br>
+        <textarea name ="Reason for Visit"></textarea>
+        <br><br>
+
+        <input
+            type="checkbox"
+            id="terms"
+            name="appointment_terms"
+            value="accepted"
+            required>
+        <label for="terms">
+            I accept the appointment terms and conditions.
+        </label>
+        <br><br>
+
+        <input type="submit" value="Submit Appointment">
+        <input type="reset" value="Reset Form">
+
+    </form>
+    <hr>
+
+    <h2>Clinic Contact</h2>
+
+    <p>
+        For general queries, contact us at
+        <a href="tel:+91 xxxxx xxxxx">+91 xxxxx xxxxx</a>.
+    </p>
+
+    <p>
+        <strong>Emergency:</strong>
+        <a href="tel:112">Call Emergency Services (112)</a>
+    </p>
+
+</body>
+</html>
