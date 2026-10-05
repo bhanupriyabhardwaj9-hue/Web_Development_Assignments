@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GLA In The News & Investors</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 30px;
+        }
+
+        .news-section {
+            background-color: #f1f5f9;
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px 20px;
+            flex: 1;
+            min-width: 260px;
+            max-width: 300px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-logo {
+            height: 40px;
+            object-fit: contain;
+            margin-bottom: 25px;
+            align-self: center;
+        }
+
+        .card-date {
+            font-size: 11px;
+            color: #3b82f6;
+            margin-bottom: 8px;
+        }
+
+        .card-headline {
+            font-size: 13px;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 11px;
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .see-more-btn {
+            background-color: #fee2e2;
+            color: #ef4444;
+            border: none;
+            padding: 8px 16px;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .investors-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .investor-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 280px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .investor-card img {
+            max-width: 80%;
+            max-height: 50px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <section class="news-section">
+            <h2 class="section-title">GLA In The News</h2>
+            <div class="card-container">
+                
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Economic_Times_logo.svg" alt="Economic Times" width="100%" class="card-logo">
+                    <div class="card-date">21 Dec 2021</div>
+                    <div class="card-headline">Edtech startup GLA University acquires data analytics firm Prepleaf for $1 million.</div>
+                    <div class="card-desc">With their latest acquisition, GLA University moves one step closer to becoming...</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Moneycontrol_Logo.png" alt="Moneycontrol" class="card-logo">
+                    <div class="card-date">26 Oct 2021</div>
+                    <div class="card-headline">Kunal Shah, Vijay Shekhar Sharma, Amrish Rau among 21 angel investors in GLA University</div>
+                    <div class="card-desc">GLA University is aiming to expand to 20 smaller cities by March 2022 and...</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.vccircle.com/wp-content/uploads/2022/08/VCCircle-Logo.png" alt="VCCircle" class="card-logo">
+                    <div class="card-date">18 Aug 2020</div>
+                    <div class="card-headline">Unitus Ventures leads pre-Series A funding for coding-focussed GLA University</div>
+                    <div class="card-desc">Software coding platform GLA University has raised $2.5 million (Rs 18.6 crore) in...</div>
+                </div>
+
+            </div>
+            <button class="see-more-btn">SEE MORE &gt;</button>
+        </section>
+
+        <section class="investors-section">
+            <h2 class="section-title">Our Investors, Who Believe In Us</h2>
+            <div class="investors-container">
+                <div class="investor-card">
+                    <img src="https://unitus.vc/wp-content/uploads/2017/07/unitus-ventures-logo.png" alt="Unitus Ventures">
+                </div>
+                <div class="investor-card">
+                    <img src="https://www.omidyardownload.com/wp-content/uploads/2021/04/ON_Logo_India_RGB.png" alt="Omidyar Network India">
+                </div>
+                <div class="investor-card">
+                    <img src="https://indiaquotient.in/wp-content/uploads/2021/08/India-Quotient-Logo.png" alt="IndiaQuotient">
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

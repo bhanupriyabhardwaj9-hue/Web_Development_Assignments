@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+#main{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding:40px;
+    border:1px solid gray;
+    gap:10px;
+    grid-template-areas: 
+    "a a a a"
+    "b c d e"
+    "f g h i"
+    "j k l m"
+    "n o p q"
+    ;
+    height:400px;
+    width:350px;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b1{
+    grid-area: a;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b5{
+    grid-area: b;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b6{
+    grid-area: c;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b7{
+    grid-area: d;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b8{
+    grid-area: e;
+    background-color: black;
+    color:white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b9{
+    grid-area: f;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b10{
+    grid-area: g;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b11{
+    grid-area: h;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b12{
+    grid-area: i;
+    background-color: black;
+    color:white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b13{
+    grid-area: j;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b14{
+    grid-area: k;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b15{
+    grid-area: l;
+    color:black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b16{
+    grid-area: m;
+    background-color: black;
+    color:white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b17{
+    grid-area: n;
+    color:white;
+    background-color: orangered;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b18{
+    grid-area: o;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b19{
+    grid-area: p;
+    color:white ;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+.b20{
+    grid-area: q    ;
+    color:white;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px -5px gray;
+}
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div class="b1"></div>
+        <div class="b5">1</div>
+        <div class="b6">2</div>
+        <div class="b7">3</div>
+        <div class="b8">+</div>
+        <div class="b9">4</div>
+        <div class="b10">5</div>
+        <div class="b11">6</div>
+        <div class="b12">-</div>
+        <div class="b13">7</div>
+        <div class="b14">8</div>
+        <div class="b15">9</div>
+        <div class="b16">x</div>
+        <div class="b17">C</div>
+        <div class="b18">0</div>
+        <div class="b19">=</div>
+        <div class="b20">/</div>
+    </div>
+</body>
+</html>
